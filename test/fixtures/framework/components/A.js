@@ -1,0 +1,1 @@
+console.log('this is framework module A')

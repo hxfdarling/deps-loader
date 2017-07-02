@@ -1,0 +1,13 @@
+{
+	"presets": [
+		"env"
+	],
+
+	"plugins": [
+		"transform-remove-strict-mode"
+		// "transform-runtime",
+		// "syntax-dynamic-import",
+		// "syntax-async-functions",
+		// "transform-regenerator"
+	]
+}
