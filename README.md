@@ -6,4 +6,5 @@ This is webpack loader plugin. It support custome dependence file
 `
  npm i -D depsx-loader
 `
+
 notice:just support node8.x environment
