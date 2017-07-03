@@ -60,11 +60,16 @@ function bundle(options, next) {
 		}
 		expect(stats.compilation.errors).to.be.empty
 		var content = mfs.readFileSync('/test.build.js').toString()
-		// fs.writeFile(path.join(__dirname, '../dist/bundle.js'), content, err => {
-		// 	if (!err) {
-		next(content, stats.compilation.warnings)
-		// }
-		// })
+		fs.emptyDir(path.join(__dirname, '../dist'))
+			.then(() => {
+				return fs.writeFile(path.join(__dirname, '../dist/bundle.js'), content)
+			})
+			.then(err => {
+				if (!err) {
+					next(content, stats.compilation.warnings)
+				}
+			})
+
 	})
 }
 
