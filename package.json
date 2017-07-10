@@ -46,6 +46,7 @@
     "pug": "^2.0.0-beta6",
     "raw-loader": "^0.5.1",
     "skeleton-loader": "0.0.5",
+    "style-loader": "^0.18.2",
     "stylus": "^0.54.5",
     "stylus-loader": "^2.0.0",
     "sugarss": "^0.2.0",
